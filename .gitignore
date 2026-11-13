@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.idea/
+.vscode/
+.DS_Store
+
+# Never commit real game files or saves
+*.fos
+*.f4se
+*.esm
+*.esp
+*.esl
+*.ba2
+*.STRINGS
+*.DLSTRINGS
+*.ILSTRINGS

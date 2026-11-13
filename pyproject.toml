@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fo4tracker"
+dynamic = ["version"]
+description = "Read Fallout 4 saves and see quest progress, key story decisions, inventory and stats."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+dependencies = []
+keywords = ["fallout", "fallout4", "save", "savegame", "quest", "tracker", "bethesda"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: X11 Applications",
+    "Environment :: Win32 (MS Windows)",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Games/Entertainment :: Role-Playing",
+    "Topic :: Utilities",
+]
+
+[project.optional-dependencies]
+dnd = ["tkinterdnd2"]
+
+[project.urls]
+Homepage = "https://github.com/Promptt001/fo4tracker"
+Issues = "https://github.com/Promptt001/fo4tracker/issues"
+Changelog = "https://github.com/Promptt001/fo4tracker/blob/main/CHANGELOG.md"
+
+[project.scripts]
+fo4tracker = "fo4tracker.__main__:main"
+
+[project.gui-scripts]
+fo4tracker-gui = "fo4tracker.gui:main"
+
+[tool.setuptools]
+packages = ["fo4tracker"]
+
+[tool.setuptools.package-data]
+fo4tracker = ["*.json"]
+
+[tool.setuptools.dynamic]
+version = { attr = "fo4tracker.__version__" }
+
+[tool.ruff]
+line-length = 120
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B", "UP", "SIM"]
+ignore = ["SIM102", "SIM105"]

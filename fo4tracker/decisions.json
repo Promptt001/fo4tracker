@@ -1,0 +1,95 @@
+{
+  "_comment": "Key story decisions. Matched by quest editor ID (edid). 'after' lists quests that lead into this one, so the tool can warn you before it starts. Add your own entries in a decisions.json in your config folder (see README).",
+  "decisions": [
+    {
+      "edid": "MQ206", "line": "Main Quest", "kind": "decision",
+      "about": "Choose which faction helps you build the signal interceptor: the Brotherhood of Steel, the Railroad or the Minutemen. This decides who you're working with when you first enter the Institute.",
+      "after": ["MQ205"]
+    },
+    {
+      "edid": "MQ207", "line": "Main Quest", "kind": "decision",
+      "about": "You meet the Institute's leader and are invited to work with the Institute. Accepting opens the Institute questline; the faction choices that follow get harder to undo.",
+      "after": ["MQ206"]
+    },
+    {
+      "edid": "InstMassFusion", "line": "Institute", "kind": "point_of_no_return",
+      "about": "Widely treated as the point of no return between the Institute and the Brotherhood of Steel: finishing it for the Institute turns the Brotherhood hostile."
+    },
+    {
+      "edid": "Inst302", "line": "Institute", "kind": "decision",
+      "about": "During the battle you can follow the Institute's orders or work against them. What you do here affects your standing with the Institute, the Railroad and the Brotherhood."
+    },
+    {
+      "edid": "Inst306", "line": "Institute", "kind": "point_of_no_return",
+      "about": "The Institute sends you to wipe out the Railroad. Completing it ends the Railroad questline for good."
+    },
+    {
+      "edid": "Inst307", "line": "Institute", "kind": "point_of_no_return",
+      "about": "The Institute's strike against the Brotherhood's airship. Completing it ends the Brotherhood questline for good."
+    },
+    {
+      "edid": "Inst308", "line": "Institute", "kind": "ending",
+      "about": "The Institute ending."
+    },
+    {
+      "edid": "RR201", "line": "Railroad", "kind": "decision",
+      "about": "The Railroad asks you to work inside the Institute as an undercover agent. It keeps the Railroad and Institute paths open together for a while, but they split later."
+    },
+    {
+      "edid": "RR302", "line": "Railroad", "kind": "point_of_no_return",
+      "about": "The Railroad's open conflict with the Brotherhood of Steel. Continuing past here sets the Railroad against the Brotherhood."
+    },
+    {
+      "edid": "RR303", "line": "Railroad", "kind": "point_of_no_return",
+      "about": "The Railroad's attack on the Brotherhood. Completing it ends the Brotherhood questline."
+    },
+    {
+      "edid": "BoS302", "line": "Brotherhood of Steel", "kind": "decision",
+      "about": "Paladin Danse's fate is decided here: you can carry out the order to execute him or find a way to spare him."
+    },
+    {
+      "edid": "BoS302B", "line": "Brotherhood of Steel", "kind": "point_of_no_return",
+      "about": "The Brotherhood's move against the Railroad. Completing it ends the Railroad questline."
+    },
+    {
+      "edid": "MQ302", "line": "Main Quest", "kind": "ending",
+      "about": "The final assault on the Institute (one of the faction versions of The Nuclear Option)."
+    },
+    {
+      "edid": "MQ302Min", "line": "Minutemen", "kind": "ending",
+      "about": "The Minutemen ending."
+    },
+    {
+      "edid": "MQ302BoS", "line": "Brotherhood of Steel", "kind": "ending",
+      "about": "The Brotherhood of Steel ending."
+    },
+    {
+      "edid": "MQ302RR", "line": "Railroad", "kind": "ending",
+      "about": "The Railroad ending."
+    },
+    {
+      "edid": "MS17", "line": "Side Quests", "kind": "decision",
+      "about": "What you do about the Compound and Covenant decides whether Covenant survives and what happens to Amelia Stockton."
+    },
+    {
+      "edid": "MS11", "line": "Side Quests", "kind": "decision",
+      "about": "You can side with the robot crew of the U.S.S. Constitution or with the scavengers trying to take it."
+    },
+    {
+      "edid": "MS09", "line": "Side Quests", "kind": "decision",
+      "about": "In the end you choose between Jack Cabot and his father Lorenzo."
+    },
+    {
+      "edid": "MS01", "line": "Side Quests", "kind": "decision",
+      "about": "You choose what happens to the boy in the fridge: return him to his family, or hand him over to someone who wants to buy him."
+    },
+    {
+      "edid": "MS16", "line": "Side Quests", "kind": "decision",
+      "about": "Bobbi No-Nose's heist: you can see it through with her or turn against her."
+    },
+    {
+      "edid": "MS19", "line": "Side Quests", "kind": "decision",
+      "about": "In Vault 81 there is only one cure: give it to the sick boy or keep it for yourself."
+    }
+  ]
+}

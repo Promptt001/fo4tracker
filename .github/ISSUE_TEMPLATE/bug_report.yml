@@ -1,0 +1,37 @@
+name: Bug report
+description: Something is wrong or missing in the report, or the tool fails
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: "Output of `fo4tracker --version`, your OS, and `python3 --version`"
+      placeholder: "fo4tracker 1.0.0, Debian 13, Python 3.13.5"
+    validations:
+      required: true
+  - type: input
+    id: game
+    attributes:
+      label: Game version and setup
+      description: Shown in the window header. Steam/GOG, Proton or Windows, mods or F4SE?
+      placeholder: "1.11.169.0, Steam on Proton, ~40 mods, F4SE"
+  - type: textarea
+    id: warnings
+    attributes:
+      label: Parser warnings / error text
+      description: From the Load order tab, the error dialog's details, or the terminal.
+      render: text
+  - type: checkboxes
+    id: save
+    attributes:
+      label: Save file
+      options:
+        - label: I can share a save that reproduces this, if asked

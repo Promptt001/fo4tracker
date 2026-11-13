@@ -1,0 +1,11 @@
+name: Feature or decision request
+description: Suggest an improvement, or a story decision the tool should track
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+      description: For a new key decision, include the quest name and editor ID if you know it, and what the choice is.
+    validations:
+      required: true
