@@ -4,6 +4,14 @@ The **Decisions** tab and the "Key decisions" part of the summary come from a li
 contain important story choices. The list ships in `fo4tracker/decisions.json`, and you can add
 to it or override it with your own file.
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="images/report-decisions-dark.png">
+    <img src="images/report-decisions-light.png" width="720"
+         alt="Key decisions in the HTML report: cards marked Decision ahead, Possible choice and Decided, each with what the choice is about and the journal evidence">
+  </picture>
+</p>
+
 ## Your own file
 
 | OS | Location |

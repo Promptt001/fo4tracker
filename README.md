@@ -11,6 +11,12 @@ you've made or are about to make, your inventory, and your stats.
 - **Window, terminal, or HTML.** Use the desktop window, print a text report, or export a
   standalone HTML page you can keep or share.
 
+<p align="center">
+  <img src="docs/images/gui-questlines.png" width="880"
+       alt="Fallout 4 Save Tracker window showing the Questlines tab: quests grouped by questline, with the selected quest's objectives, journal entries and why its decision matters">
+</p>
+<p align="center"><sub>Screenshots use a made-up demo save.</sub></p>
+
 > Fallout 4 Save Tracker is an unofficial fan project. It is not affiliated with or endorsed by
 > Bethesda Softworks, ZeniMax Media or Microsoft. *Fallout* is a trademark of its owner.
 
@@ -24,6 +30,27 @@ you've made or are about to make, your inventory, and your stats.
 | **Inventory** | Every item, including custom names, attached weapon/armor mods and equipped state |
 | **Stats** | All of the game's misc stats |
 | **Load order** | Plugins in the save, any missing from your Data folder, the F4SE co-save version and any parser warnings |
+
+### Screenshots
+
+<table>
+  <tr>
+    <td width="50%"><a href="docs/images/gui-summary.png"><img src="docs/images/gui-summary.png"
+      alt="Summary tab: a plain-language overview of the playthrough, the main story, factions, DLC and side quests"></a>
+      <p align="center"><b>Summary</b>: the whole playthrough at a glance</p></td>
+    <td width="50%"><a href="docs/images/gui-decisions.png"><img src="docs/images/gui-decisions.png"
+      alt="Decisions tab: story choices marked Decision ahead, Decided or Not reached, with details for the selected one"></a>
+      <p align="center"><b>Decisions</b>: what's settled and what's coming</p></td>
+  </tr>
+  <tr>
+    <td width="50%"><a href="docs/images/gui-questlines.png"><img src="docs/images/gui-questlines.png"
+      alt="Questlines tab: quests grouped by questline with status, plus objectives and journal entries for the selected quest"></a>
+      <p align="center"><b>Questlines</b>: objectives and journal entries</p></td>
+    <td width="50%"><a href="docs/images/gui-inventory.png"><img src="docs/images/gui-inventory.png"
+      alt="Inventory tab: items by category with counts, equipped state, attached mods and a renamed weapon"></a>
+      <p align="center"><b>Inventory</b>: custom names, mods and equipped gear</p></td>
+  </tr>
+</table>
 
 ## Requirements
 
@@ -68,6 +95,20 @@ fo4tracker-gui                        # same, without a console window on Window
 - **View report in browser** (Ctrl+B) or **Export HTML…** (Ctrl+E) produces a standalone report page.
 - **F5** reloads the current save. This is handy after you save again in-game.
 - Click a column heading to sort it, and click it again to reverse the order.
+
+### The HTML report
+
+**Export HTML…** (or `--html FILE` on the command line) writes a single self-contained page,
+with the save's thumbnail embedded. You can keep it, print it or share it. It follows your
+system's light or dark mode.
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/images/report-dark.png">
+    <img src="docs/images/report-light.png" width="720"
+         alt="Exported HTML report: header with the save thumbnail, section links and the executive summary">
+  </picture>
+</p>
 
 ### The command line
 
